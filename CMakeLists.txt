@@ -15,4 +15,5 @@ add_executable(${CMAKE_PROJECT_NAME} ${SOURCE_FILES} ${SOURCES})
 target_include_directories(${CMAKE_PROJECT_NAME}
     PRIVATE
     include/
+    include/enseignements/
 )
