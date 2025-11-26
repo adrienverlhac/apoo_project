@@ -10,7 +10,7 @@ void test() {
     departement.addEnseignant("Maria", "Maxime");
     
     const Enseignant *e = departement.getEnseignant(1);
-    std::cout << e->toString() << std::endl;
+    std::cout << *e << std::endl;
 
 }
 

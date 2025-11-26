@@ -10,7 +10,7 @@ private:
     std::string nom;
 public:
     Diplome(/* args */) = default;
-    ~Diplome();
+    ~Diplome() = default;
 };
 
 

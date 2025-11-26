@@ -19,7 +19,8 @@ public:
     Enseignant(/* args */) = default;
     Enseignant(const std::string& p_nom, const std::string& p_prenom);
     ~Enseignant() = default;
-
+    friend std::ostream& operator<<(std::ostream& os, const Enseignant& e); 
+    
     inline int getId() const { return id; }
     inline const Departement * getDepartement() const { return departement; } 
 
@@ -27,6 +28,7 @@ public:
 
     std::string toString() const;
 };
+
 
 
 

@@ -7,10 +7,11 @@
 class Cours : public Enseignement
 {
 private:
-    static const float coef; 
+    static constexpr float coef = 1.5f; 
 public:
     Cours() = default;
     ~Cours();
+    float getCoef() const override;
 };
 
 

@@ -1,6 +1,6 @@
 #include <enseignant.hpp>
 #include <departement.hpp>
-
+#include <ostream>
 
 Enseignant::Enseignant(const std::string& p_nom, const std::string& p_prenom) : nom(p_nom), prenom(p_prenom)
 {
@@ -19,4 +19,9 @@ std::string Enseignant::toString() const {
            "\nPrenom -> " + prenom +
            "\nNom -> " + nom +
            "\nDepartement -> " + departement->getNom();
+}
+
+std::ostream& operator<<(std::ostream &strm, const Enseignant& e) 
+{
+    return strm << e.toString();
 }
