@@ -11,12 +11,13 @@ private:
     int id;
     std::string nom;
     // std::string code;  c'est quoi chef???
-    Departement *gerant;
-    Enseignant *resposable;
+    const Departement *gerant;
+    const Enseignant *resposable;
 
 public:
-    UE(/* args */);
-    ~UE();
+    UE() = default;
+    UE(const std::string& p_nom, const Departement * p_gerant, const Enseignant *p_responsable );
+    ~UE() = default;
 };
 
 

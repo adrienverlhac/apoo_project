@@ -2,7 +2,7 @@
 
 #include <departement.hpp>
 
-void init() {
+void test() {
 
     Departement departement("Informatique");
     Enseignant conchon("Conchon", "Emmanuel");
@@ -18,7 +18,6 @@ void init() {
 int main()
 {
 
-    std::cout << "Hello World!" << std::endl;
-    init();
+    test();
     return 0;
 }

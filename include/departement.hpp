@@ -19,6 +19,7 @@ public:
 
     inline int getId() const { return id; }
     inline const std::string& getNom() const { return nom; }
+    inline const std::vector<Enseignant>& getEnseignants() const { return enseignants; }
 
     Enseignant * getEnseignant(int id);
     void addEnseignant(Enseignant& p_enseignant);
