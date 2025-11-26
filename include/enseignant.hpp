@@ -4,17 +4,28 @@
 
 #include <string>
 
+class Departement; // class forwarding (regarder l'include dans le cpp pour comprendre)
+
 class Enseignant
 {
 private:
     int id;
     std::string nom;
     std::string prenom;
+    const Departement * departement = nullptr;
 
 
 public:
     Enseignant(/* args */) = default;
-    ~Enseignant();
+    Enseignant(const std::string& p_nom, const std::string& p_prenom);
+    ~Enseignant() = default;
+
+    inline int getId() const { return id; }
+    inline const Departement * getDepartement() const { return departement; } 
+
+    void setDepartement(const Departement *p_departement);
+
+    std::string toString() const;
 };
 
 
