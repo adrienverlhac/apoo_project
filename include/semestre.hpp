@@ -2,12 +2,15 @@
 #ifndef __SEMESTRE_HPP__
 #define __SEMESTRE_HPP__
 
+#include <string>
+
 class Semestre
 {
 private:
-    /* data */
+    std::string nom;
+    std::string type;
 public:
-    Semestre(/* args */);
+    Semestre(/* args */) = default;
     ~Semestre();
 };
 

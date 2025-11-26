@@ -7,9 +7,9 @@
 class Td : public Enseignement
 {
 private:
-    /* data */
+    static const float coef;
 public:
-    Td(/* args */);
+    Td(/* args */)= default;
     ~Td();
 };
 

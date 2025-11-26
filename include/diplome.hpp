@@ -2,12 +2,14 @@
 #ifndef __DIPLOME_HPP__
 #define __DIPLOME_HPP__
 
+#include <string>
+
 class Diplome
 {
 private:
-    /* data */
+    std::string nom;
 public:
-    Diplome(/* args */);
+    Diplome(/* args */) = default;
     ~Diplome();
 };
 

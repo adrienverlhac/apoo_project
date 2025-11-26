@@ -2,12 +2,18 @@
 #ifndef __ENSEIGNANT_HPP__
 #define __ENSEIGNANT_HPP__
 
+#include <string>
+
 class Enseignant
 {
 private:
-    /* data */
+    int id;
+    std::string nom;
+    std::string prenom;
+
+
 public:
-    Enseignant(/* args */);
+    Enseignant(/* args */) = default;
     ~Enseignant();
 };
 
