@@ -23,7 +23,8 @@ public:
     
     inline int getId() const { return id; }
     inline const Departement * getDepartement() const { return departement; } 
-
+    const std::string& getNom() const;
+    
     void setDepartement(const Departement *p_departement);
 
     std::string toString() const;

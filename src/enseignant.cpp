@@ -8,6 +8,9 @@ Enseignant::Enseignant(const std::string& p_nom, const std::string& p_prenom) : 
     id = count_id++;
 }
 
+const std::string& Enseignant::getNom() const {
+    return nom;
+}
 
 void Enseignant::setDepartement(const Departement *p_departement)
 {
